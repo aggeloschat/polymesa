@@ -10,9 +10,10 @@ A = [ 1     9    17    25    -33    41    49    57;
       2    1    8    26    4    4    0    58;
   ];
 
-result_one = mydct2(A);
-result_two = dct2(A);
+result_one = mydct2(A)
+result_two = dct2(A)
 
 % Sygkrinoume th diafora
 diff = result_one - result_two;
+disp(max(abs(diff(:))));
 
